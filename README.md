@@ -28,7 +28,16 @@ Every so often we push new strings thast require translation in to Crowdin and p
 
 ### Testing
 
-There is an option to test translations yourself. This section will be exapnded upon soon.
+Testing the "quality" of translations is a very valuable capability for FreeCAD GUI translators.
+Thanks to this possibility you can check on a "living organism" whether the translated string is displayed correctly. You can adjust the form of the words used.
+Without this the GUI interface would contain many grammatical and linguistic errors. Even in some cases would not be understandable to the user. And applying corrections to the current translations would be a tedious and very lengthy process.
+
+1. What you will need:
+- an active account with minimum translator privileges in Crowdin for FreeCAD,
+- a computer running Linux, and the **qttools5-dev-tools** package *(Debian-based OS)* installed,
+- a current development version of FreeCAD, available for download from the Git repository
+- not required, but helpful **Qt Linguist** for viewing source files *(this is for folks more involved in GUI translation)*,
+- and of course a lot of available time.
 
 ### Discussion
 
