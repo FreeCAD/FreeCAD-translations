@@ -22,6 +22,6 @@ for f in *.ts ; do
     nf="${nf^}_$lang.qm"
     lrelease "$f" -qm "$nf"
     echo -e Moving '\e[1;32m'"$nf"'\e[0m' to target directory.'\n'
- #   mv "$nf" "$od"
- #   rm "$f"
+    mv "$nf" "$od"
+    rm "$f"
 done
