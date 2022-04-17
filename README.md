@@ -70,12 +70,29 @@ ls -1 *.ts| sed 's/\.ts//' |xargs -i mv {}.ts {}_pl.ts && ls -1 *_pl.ts| sed 's/
 Remember this is just a working example. The task can be done in other ways - you can even prepare a shell script.
 
    Example conversion process:
-   ![konsola](cli-konwersja.png)
-
+   ![console](cli-konwersja.png)
+   
 3. To test the quality of your translations you should always use the latest development version of FreeCAD. This will ensure the compatibility of the program code with the source files containing the translation text.
 You can download the latest release from the FreeCAD repository on [GitHub](https://github.com/FreeCAD/FreeCAD-Bundle/releases/tag/weekly-builds)
 
+    **Thanks to this possibility it is not necessary to compile the program from sources.**
+
+    After performing the conversion and moving the newly created files to the appropriate location start FreeCAD to enjoy the changes in the GUI translation.
+
 4. The **Qt Linguist** tool can provide additional information when viewing the source file. However it's ***not recommended*** making local changes to the source file unless you are aware of what you are doing or you want to do some additional testing yourself.
+
+ ##### Bash script  *(2022-04-17)*
+   Due to the great interest in this topic by the international community - a universal script was created to support the work of translators.
+
+   - automatically converts any number of source files - 1 ... 3 ... 8 ...
+   - adjusts the file name to the required criteria
+   - independently recognizes the language of the source file
+   - moves converted files to the appropriate FreeCAD folder
+
+   [QMconvert script](QMconvert.sh)
+
+   Example conversion process:
+   ![console](QMconvert.png)
 
 ### Discussion*
 
