@@ -12,13 +12,13 @@ LS_COLORS='*.ts=01;32' ls -1 -C --color=always *.ts
 od="$HOME/.local/share/FreeCAD/translations/"
 echo #new line
 echo -e Target directory is: '\e[1;31m'"$od" '\e[0m\n'
-mkdir -p '$od'
+mkdir -p "$od"
 
 for f in *.ts ; do
     nf="$(sed 's/\.ts//' <<< "$f")"
     lang="$(grep language= "$f")"
     [[ $lang =~ language=.([a-z]*?). ]] && lang=${BASH_REMATCH[1]} || lang=''
-    [[ -z "$lang" ]] && echo -e '\e[1;31m'Unable to detect language for '\e[32m'$f'\e[31m', skipping!'\e[0m\n' && continue
+    [[ -z "$lang" ]] && echo -e '\e[1;31m'Unable to detect language for '\e[32m'"$f"'\e[31m', skipping!'\e[0m\n' && continue
     nf="${nf^}_$lang.qm"
     lrelease "$f" -qm "$nf"
     echo -e Moving '\e[1;32m'"$nf"'\e[0m' to target directory.'\n'
