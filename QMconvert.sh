@@ -1,9 +1,13 @@
 #!/bin/bash
 # A.D. 2022-04-17 - juniorjpdj (Jacek Pruciak Junior), kaktus (Jacek Pruciak)
-# 		QM file converter for FreeCAD translators
-# This script was written for the international community engaged in the work of translating and improving FreeCAD GUI translations
-# In the first version, this work was done by a long command with pipelined processing. However when more people of different nationalities started to use this solution modifying the command could be cumbersome.
-# Therefore, this all-purpose versatile bash script was created to solve several inconveniences, at the same time as it recognizes the language of the source files.
+# QM file converter for FreeCAD translators
+#
+# This script was written for the international community engaged in the work of translating and improving
+# FreeCAD GUI translations. In the first version, this work was done by a long command with pipelined processing.
+# However when more people of different nationalities started to use this solution modifying the command could be
+# cumbersome. Therefore, this all-purpose versatile bash script was created to solve several inconveniences, at
+# the same time as it recognizes the language of the source files.
+
 echo
 echo -e 'Source file(s) to be converted:'
 LS_COLORS='*.ts=01;32' ls -1 -C --color=always *.ts
