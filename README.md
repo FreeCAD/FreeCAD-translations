@@ -93,7 +93,13 @@ You can download the latest release from the FreeCAD repository on [GitHub](http
 
    Example conversion process:
    ![console](QMconvert.png)
-
-### Discussion*
-
+   
+ ##### Bash script  *(2024-02-19)*
+   There's a new version of the compilation script available. Essentially, it doesn't do anything more than the previous one. However, a small fix has been introduced regarding language and region detection. This will be a significant improvement for translators who use a two-part language code.
+   You can download the bash script here:
+   
+   [QMconvert2 script](https://github.com/kaktusus/FreeCAD-translators-tools/blob/main/README.md)
+    
+### Discussion
+You're welcome to join the discussion on the [FreeCAD forum](https://forum.freecad.org/viewforum.php?style=4&f=45). Translators have their own corner there.
 
